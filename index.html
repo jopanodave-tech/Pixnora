@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixnora - Create. Animate. Inspire.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-sparkles"></i> Pixnora
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#features" class="nav-link">Fonctionnalités</a>
+                <a href="#pricing" class="nav-link">Tarification</a>
+                <a href="#testimonials" class="nav-link">Avis</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="nav-btn login-btn">Connexion</button>
+                <button class="nav-btn signup-btn">S'inscrire</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Create. Animate. Inspire.</h1>
+            <p class="hero-subtitle">Pixnora transforme vos idées en contenus visuels puissants grâce à l'intelligence artificielle.</p>
+            <div class="hero-buttons">
+                <button class="cta-button primary-btn">Commencer gratuitement</button>
+                <button class="cta-button secondary-btn">Voir la démo</button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card-1">
+                <i class="fas fa-image"></i>
+            </div>
+            <div class="floating-card card-2">
+                <i class="fas fa-magic"></i>
+            </div>
+            <div class="floating-card card-3">
+                <i class="fas fa-film"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Pourquoi choisir Pixnora ?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Vitesse Éclair</h3>
+                    <p>Créez des contenus visuels en secondes, pas en heures. Notre IA traite vos demandes instantanément.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>IA Avancée</h3>
+                    <p>Technologie d'apprentissage profond de pointe pour des résultats professionnels et réalistes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Personnalisation</h3>
+                    <p>Contrôle total sur les couleurs, styles et animations pour une création unique et personnalisée.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Collaboration</h3>
+                    <p>Travaillez en équipe, partagez vos projets et collaborez en temps réel avec vos collègues.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Sécurisé</h3>
+                    <p>Vos créations sont sauvegardées automatiquement et protégées par le chiffrement de bout en bout.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Export Illimité</h3>
+                    <p>Téléchargez vos créations dans tous les formats : PNG, SVG, MP4, GIF et plus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Nos Tarifs</h2>
+            <p class="pricing-subtitle">Choisissez le plan qui correspond à vos besoins</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Gratuit</h3>
+                    <div class="price">0 €<span>/mois</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 5 créations/mois</li>
+                        <li><i class="fas fa-check"></i> Modèles de base</li>
+                        <li><i class="fas fa-check"></i> Support communautaire</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Collaboration</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Export HD</li>
+                    </ul>
+                    <button class="pricing-btn">Commencer</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="badge">Populaire</div>
+                    <h3>Pro</h3>
+                    <div class="price">29 €<span>/mois</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Créations illimitées</li>
+                        <li><i class="fas fa-check"></i> Tous les modèles</li>
+                        <li><i class="fas fa-check"></i> Support prioritaire</li>
+                        <li><i class="fas fa-check"></i> Collaboration d'équipe</li>
+                        <li><i class="fas fa-check"></i> Export 4K</li>
+                    </ul>
+                    <button class="pricing-btn primary-btn">S'abonner maintenant</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Entreprise</h3>
+                    <div class="price">Sur devis</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Tout illimité</li>
+                        <li><i class="fas fa-check"></i> IA personnalisée</li>
+                        <li><i class="fas fa-check"></i> Support 24/7</li>
+                        <li><i class="fas fa-check"></i> Intégrations API</li>
+                        <li><i class="fas fa-check"></i> Formation d'équipe</li>
+                    </ul>
+                    <button class="pricing-btn">Nous contacter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Ce que nos utilisateurs disent</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Pixnora a transformé ma façon de créer du contenu. Je gagne des heures chaque semaine !"</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/48?img=1" alt="Avatar">
+                        <div>
+                            <p class="author-name">Sophie Martin</p>
+                            <p class="author-role">Content Creator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"L'IA est incroyablement intuitive. Aucune courbe d'apprentissage, juste des résultats immédiats."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/48?img=2" alt="Avatar">
+                        <div>
+                            <p class="author-name">Marc Dubois</p>
+                            <p class="author-role">Designer Graphique</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Le meilleur investissement pour notre agence. Nos clients sont impressionnés par la qualité."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/48?img=3" alt="Avatar">
+                        <div>
+                            <p class="author-name">Élise Leclerc</p>
+                            <p class="author-role">Directrice d'Agence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Prêt à transformer vos idées ?</h2>
+            <p>Rejoignez des milliers de créateurs qui utilisent Pixnora</p>
+            <button class="cta-button primary-btn">Commencer maintenant - C'est gratuit</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Pixnora</h4>
+                    <p>Transformez vos idées en contenus visuels époustouflants avec l'IA.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Produit</h4>
+                    <ul>
+                        <li><a href="#">Fonctionnalités</a></li>
+                        <li><a href="#">Tarification</a></li>
+                        <li><a href="#">Roadmap</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutoriels</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Confidentialité</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pixnora. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
