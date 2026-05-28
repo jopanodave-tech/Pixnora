@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixnora - Générateur de contenu IA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-sparkles"></i> Pixnora
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="#generator" class="nav-link">Générateur</a>
+                <a href="#pricing" class="nav-link">Tarification</a>
+                <button class="nav-btn login-btn">Connexion</button>
+                <button class="nav-btn signup-btn">S'inscrire</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Generator Section -->
+    <section class="generator-section" id="generator">
+        <div class="container">
+            <div class="generator-container">
+                <div class="generator-header">
+                    <h2>Générateur de contenu IA</h2>
+                    <p>Transformez vos idées en contenus viraux en quelques secondes</p>
+                </div>
+                
+                <div class="generator-grid">
+                    <div class="prompt-section">
+                        <label for="prompt-input" class="input-label">Votre idée :</label>
+                        <textarea 
+                            id="prompt-input"
+                            class="prompt-textarea" 
+                            placeholder="Décrivez votre contenu...&#10;Ex: 'Une image futuriste de Paris en 2050 avec des voitures volantes et des néons bleus et violets'">
+                        </textarea>
+                        <div class="char-count">
+                            <span id="char-current">0</span> / 500 caractères
+                        </div>
+                        <button class="generate-btn primary-btn" id="generate-btn">
+                            <i class="fas fa-wand-magic-sparkles"></i> Générer le contenu
+                        </button>
+                        <div class="quick-prompts">
+                            <p>Essayez :</p>
+                            <button class="quick-prompt-btn" data-prompt="Un logo de startup tech moderne avec dégradé bleu et violet">Logo Tech</button>
+                            <button class="quick-prompt-btn" data-prompt="Paysage montagneux coucher de soleil photographie 8K ultra réaliste">Paysage</button>
+                            <button class="quick-prompt-btn" data-prompt="Personnage cyberpunk femme futuriste illustration anime">Cyberpunk</button>
+                        </div>
+                    </div>
+                    
+                    <div class="result-section">
+                        <label class="input-label">Résultat :</label>
+                        <div class="result-placeholder">
+                            <div class="loading-animation" id="loading-spinner"></div>
+                            <div class="result-content">
+                                <i class="fas fa-image"></i>
+                                <p id="result-text">Votre contenu généré apparaîtra ici</p>
+                            </div>
+                            <img id="generated-image" src="" alt="Résultat généré par IA" class="generated-image">
+                        </div>
+                        <div class="result-actions">
+                            <button class="action-btn" id="download-btn" style="display: none;">
+                                <i class="fas fa-download"></i> Télécharger
+                            </button>
+                            <button class="action-btn" id="share-btn" style="display: none;">
+                                <i class="fas fa-share"></i> Partager
+                            </button>
+                            <button class="action-btn" id="refine-btn" style="display: none;">
+                                <i class="fas fa-wand-magic-sparkles"></i> Affiner
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="options-section">
+                    <div class="option-card">
+                        <h4><i class="fas fa-palette"></i> Style visuel</h4>
+                        <select id="style-select" class="option-select">
+                            <option value="realistic">Réaliste</option>
+                            <option value="pixar">Pixar 3D</option>
+                            <option value="anime">Anime</option>
+                            <option value="cinematic">Cinématique</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="digital-art">Art digital</option>
+                        </select>
+                    </div>
+                    
+                    <div class="option-card">
+                        <h4><i class="fas fa-expand"></i> Format</h4>
+                        <select id="format-select" class="option-select">
+                            <option value="square">Image (1080x1080)</option>
+                            <option value="portrait">Story (1080x1920)</option>
+                            <option value="landscape">Bannière (1920x1080)</option>
+                            <option value="ultrawide">Ultra-wide (2560x1440)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="option-card">
+                        <h4><i class="fas fa-brain"></i> IA Model</h4>
+                        <select id="model-select" class="option-select">
+                            <option value="pixnora-ultra">Pixnora Ultra</option>
+                            <option value="stable-diffusion">Stable Diffusion XL</option>
+                            <option value="dalle3">DALL-E 3</option>
+                            <option value="midjourney">Midjourney</option>
+                        </select>
+                    </div>
+
+                    <div class="option-card">
+                        <h4><i class="fas fa-sliders"></i> Qualité</h4>
+                        <select id="quality-select" class="option-select">
+                            <option value="fast">Rapide</option>
+                            <option value="balanced">Équilibré</option>
+                            <option value="high">Haute</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="generation-history">
+                    <h3>Générations récentes</h3>
+                    <div class="history-grid" id="history-grid">
+                        <p class="no-history">Aucune génération pour le moment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-compact">
+        <div class="container">
+            <h2>Pourquoi Pixnora Generator ?</h2>
+            <div class="features-compact-grid">
+                <div class="feature-compact">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Ultra rapide</h3>
+                    <p>Génération en moins de 30 secondes</p>
+                </div>
+                <div class="feature-compact">
+                    <i class="fas fa-crown"></i>
+                    <h3>Qualité premium</h3>
+                    <p>Résolution jusqu'à 4K</p>
+                </div>
+                <div class="feature-compact">
+                    <i class="fas fa-paintbrush"></i>
+                    <h3>Styles variés</h3>
+                    <p>6+ styles d'art disponibles</p>
+                </div>
+                <div class="feature-compact">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud safe</h3>
+                    <p>Stockage sécurisé de vos générations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Commencez à générer maintenant</h2>
+            <p>Créez du contenu viral en quelques clics</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <button class="cta-button primary-btn" onclick="document.getElementById('prompt-input').focus();">
+                    Commencer gratuitement
+                </button>
+                <button class="cta-button secondary-btn">Voir les tarifs</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Pixnora Generator</h4>
+                    <p>L'outil IA ultime pour créer du contenu viral instantanément.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Produit</h4>
+                    <ul>
+                        <li><a href="#">Générateur</a></li>
+                        <li><a href="#">Galerie</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tarification</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Confidentialité</a></li>
+                        <li><a href="#">Conditions</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pixnora. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="generator.js"></script>
+</body>
+</html>
