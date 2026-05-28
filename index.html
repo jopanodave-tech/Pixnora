@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixnora - Create. Animate. Inspire.</title>
+    <title>Pixnora - Plateforme IA de création de contenus viraux</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -15,10 +15,10 @@
                 <i class="fas fa-sparkles"></i> Pixnora
             </div>
             <div class="nav-menu" id="navMenu">
-                <a href="#features" class="nav-link">Fonctionnalités</a>
+                <a href="#features" class="nav-link">Technologies</a>
+                <a href="#use-cases" class="nav-link">Pour qui ?</a>
                 <a href="#pricing" class="nav-link">Tarification</a>
-                <a href="#testimonials" class="nav-link">Avis</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#demo" class="nav-link">Démo</a>
                 <button class="nav-btn login-btn">Connexion</button>
                 <button class="nav-btn signup-btn">S'inscrire</button>
             </div>
@@ -33,11 +33,30 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Create. Animate. Inspire.</h1>
-            <p class="hero-subtitle">Pixnora transforme vos idées en contenus visuels puissants grâce à l'intelligence artificielle.</p>
+            <h1 class="hero-title">Pixnora</h1>
+            <p class="hero-subtitle">
+                Transformez vos idées en contenus viraux avec l'IA
+            </p>
+            <div class="hero-description">
+                Créez des images, vidéos et voix off professionnelles en secondes, pas en heures
+            </div>
             <div class="hero-buttons">
                 <button class="cta-button primary-btn">Commencer gratuitement</button>
                 <button class="cta-button secondary-btn">Voir la démo</button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">Créateurs actifs</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">2M+</span>
+                    <span class="stat-label">Contenus générés</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">99.9%</span>
+                    <span class="stat-label">Uptime</span>
+                </div>
             </div>
         </div>
         <div class="hero-visual">
@@ -56,49 +75,161 @@
     <!-- Features Section -->
     <section class="features" id="features">
         <div class="container">
-            <h2 class="section-title">Pourquoi choisir Pixnora ?</h2>
+            <h2 class="section-title">Nos Technologies IA</h2>
             <div class="features-grid">
+                <!-- Carte 1 -->
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-bolt"></i>
+                        <i class="fas fa-image"></i>
                     </div>
-                    <h3>Vitesse Éclair</h3>
-                    <p>Créez des contenus visuels en secondes, pas en heures. Notre IA traite vos demandes instantanément.</p>
+                    <h3>🎨 Génération d'images IA</h3>
+                    <p>Créez des visuels ultra-réalistes, style Pixar 3D ou anime en quelques secondes. Contrôle total sur le style, les couleurs et la composition.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> 10+ styles d'art</li>
+                        <li><i class="fas fa-check"></i> Résolution jusqu'à 8K</li>
+                        <li><i class="fas fa-check"></i> Modèles illimités</li>
+                    </ul>
+                    <button class="feature-btn">Générer une image →</button>
                 </div>
-                <div class="feature-card">
+                
+                <!-- Carte 2 -->
+                <div class="feature-card featured">
+                    <div class="badge-popular">Populaire</div>
                     <div class="feature-icon">
-                        <i class="fas fa-brain"></i>
+                        <i class="fas fa-film"></i>
                     </div>
-                    <h3>IA Avancée</h3>
-                    <p>Technologie d'apprentissage profond de pointe pour des résultats professionnels et réalistes.</p>
+                    <h3>🎥 Vidéos cinématographiques</h3>
+                    <p>Transformez vos scripts en vidéos TikTok/YouTube prêtes à viraliser. Montage automatique avec effets et transitions.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Montage automatique</li>
+                        <li><i class="fas fa-check"></i> Effets cinématographiques</li>
+                        <li><i class="fas fa-check"></i> Formats optimisés</li>
+                    </ul>
+                    <button class="feature-btn primary">Créer une vidéo IA →</button>
                 </div>
+                
+                <!-- Carte 3 -->
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-palette"></i>
+                        <i class="fas fa-microphone"></i>
                     </div>
-                    <h3>Personnalisation</h3>
-                    <p>Contrôle total sur les couleurs, styles et animations pour une création unique et personnalisée.</p>
+                    <h3>🔊 Voix off naturelles</h3>
+                    <p>Text-to-speech multilingue avec intonations humaines. Synchronisation labiale parfaite pour vos vidéos.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> 120+ langues</li>
+                        <li><i class="fas fa-check"></i> Voix naturelles</li>
+                        <li><i class="fas fa-check"></i> Sync lèvres auto</li>
+                    </ul>
+                    <button class="feature-btn">Tester la voix IA →</button>
                 </div>
+
+                <!-- Carte 4 -->
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-users"></i>
+                        <i class="fas fa-wand-magic-sparkles"></i>
                     </div>
-                    <h3>Collaboration</h3>
-                    <p>Travaillez en équipe, partagez vos projets et collaborez en temps réel avec vos collègues.</p>
+                    <h3>✨ Édition Intelligente</h3>
+                    <p>Retouchez vos images avec l'IA : suppression d'objets, changement de fond, amélioration automatique.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Suppression d'objets</li>
+                        <li><i class="fas fa-check"></i> Fond illimité</li>
+                        <li><i class="fas fa-check"></i> Upscaling 4x</li>
+                    </ul>
+                    <button class="feature-btn">Éditer une image →</button>
                 </div>
+
+                <!-- Carte 5 -->
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-cloud"></i>
+                        <i class="fas fa-robot"></i>
                     </div>
-                    <h3>Cloud Sécurisé</h3>
-                    <p>Vos créations sont sauvegardées automatiquement et protégées par le chiffrement de bout en bout.</p>
+                    <h3>🤖 Assistant Créatif IA</h3>
+                    <p>Générateur d'idées et de prompts basé sur les tendances actuelles. Suggestions personnalisées pour chaque plateforme.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Idées de tendances</li>
+                        <li><i class="fas fa-check"></i> Prompts optimisés</li>
+                        <li><i class="fas fa-check"></i> Analytics temps réel</li>
+                    </ul>
+                    <button class="feature-btn">Explorer les idées →</button>
                 </div>
+
+                <!-- Carte 6 -->
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-download"></i>
+                        <i class="fas fa-layer-group"></i>
                     </div>
-                    <h3>Export Illimité</h3>
-                    <p>Téléchargez vos créations dans tous les formats : PNG, SVG, MP4, GIF et plus.</p>
+                    <h3>🎬 Montage Auto</h3>
+                    <p>Assemblez vos clips automatiquement avec musique, sous-titres et effets. Optimisé pour chaque réseau social.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> 1000+ musiques libres</li>
+                        <li><i class="fas fa-check"></i> Sous-titres auto</li>
+                        <li><i class="fas fa-check"></i> Multi-plateforme</li>
+                    </ul>
+                    <button class="feature-btn">Créer un montage →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="use-cases" id="use-cases">
+        <div class="container">
+            <h2 class="section-title">Pour qui ?</h2>
+            <p class="section-subtitle">Créateurs de contenu, marketeurs digitaux et storytellers qui veulent produire du contenu viral rapidement</p>
+            
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <h3>Créateurs de Contenu</h3>
+                    <p>Produisez 10x plus de contenu en 1/10e du temps. Optimisez pour TikTok, YouTube Shorts et Instagram Reels.</p>
+                    <a href="#" class="use-case-link">En savoir plus →</a>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Agences Marketing</h3>
+                    <p>Livrez des campagnes de qualité professionnelle à vos clients sans augmenter vos coûts.</p>
+                    <a href="#" class="use-case-link">En savoir plus →</a>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Entrepreneurs</h3>
+                    <p>Créez votre présence digitale sans équipe créative. Contenus professionnels au budget startup.</p>
+                    <a href="#" class="use-case-link">En savoir plus →</a>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Éducateurs</h3>
+                    <p>Créez des contenus pédagogiques attrayants. Engagez vos étudiants avec des vidéos dynamiques.</p>
+                    <a href="#" class="use-case-link">En savoir plus →</a>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>E-commerce</h3>
+                    <p>Producez des photos et vidéos de produits professionnelles. Augmentez vos conversions avec du contenu UGC.</p>
+                    <a href="#" class="use-case-link">En savoir plus →</a>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Producteurs</h3>
+                    <p>Accélérez votre processus de production. Storyboards, animatics et premiers cuts en heures.</p>
+                    <a href="#" class="use-case-link">En savoir plus →</a>
                 </div>
             </div>
         </div>
@@ -108,104 +239,100 @@
     <section class="pricing" id="pricing">
         <div class="container">
             <h2 class="section-title">Nos Tarifs</h2>
-            <p class="pricing-subtitle">Choisissez le plan qui correspond à vos besoins</p>
+            <p class="section-subtitle">Choisissez le plan qui correspond à vos besoins</p>
+            
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <h3>Gratuit</h3>
-                    <div class="price">0 €<span>/mois</span></div>
+                    <h3>Starter</h3>
+                    <div class="price">Gratuit</div>
+                    <p class="price-subtitle">Parfait pour débuter</p>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> 5 créations/mois</li>
-                        <li><i class="fas fa-check"></i> Modèles de base</li>
-                        <li><i class="fas fa-check"></i> Support communautaire</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Collaboration</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Export HD</li>
+                        <li><i class="fas fa-check"></i> 10 crédits/mois</li>
+                        <li><i class="fas fa-check"></i> Génération images de base</li>
+                        <li><i class="fas fa-check"></i> Voix off limitée</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Vidéos HD</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Support prioritaire</li>
                     </ul>
                     <button class="pricing-btn">Commencer</button>
                 </div>
+
                 <div class="pricing-card featured">
                     <div class="badge">Populaire</div>
-                    <h3>Pro</h3>
-                    <div class="price">29 €<span>/mois</span></div>
+                    <h3>Creator</h3>
+                    <div class="price">29€<span>/mois</span></div>
+                    <p class="price-subtitle">Pour les créateurs actifs</p>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Créations illimitées</li>
-                        <li><i class="fas fa-check"></i> Tous les modèles</li>
-                        <li><i class="fas fa-check"></i> Support prioritaire</li>
-                        <li><i class="fas fa-check"></i> Collaboration d'équipe</li>
-                        <li><i class="fas fa-check"></i> Export 4K</li>
+                        <li><i class="fas fa-check"></i> 500 crédits/mois</li>
+                        <li><i class="fas fa-check"></i> Toutes images IA</li>
+                        <li><i class="fas fa-check"></i> Vidéos 4K illimitées</li>
+                        <li><i class="fas fa-check"></i> Voix off premium</li>
+                        <li><i class="fas fa-check"></i> Support par email</li>
                     </ul>
                     <button class="pricing-btn primary-btn">S'abonner maintenant</button>
                 </div>
+
                 <div class="pricing-card">
-                    <h3>Entreprise</h3>
-                    <div class="price">Sur devis</div>
+                    <h3>Professionnel</h3>
+                    <div class="price">99€<span>/mois</span></div>
+                    <p class="price-subtitle">Pour les agences</p>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Tout illimité</li>
-                        <li><i class="fas fa-check"></i> IA personnalisée</li>
+                        <li><i class="fas fa-check"></i> 2000 crédits/mois</li>
+                        <li><i class="fas fa-check"></i> Priorité de traitement</li>
+                        <li><i class="fas fa-check"></i> API access</li>
                         <li><i class="fas fa-check"></i> Support 24/7</li>
-                        <li><i class="fas fa-check"></i> Intégrations API</li>
-                        <li><i class="fas fa-check"></i> Formation d'équipe</li>
+                        <li><i class="fas fa-check"></i> Comptes d'équipe</li>
                     </ul>
-                    <button class="pricing-btn">Nous contacter</button>
+                    <button class="pricing-btn">Contacter l'équipe</button>
                 </div>
+            </div>
+
+            <div class="pricing-comparison">
+                <p>Besoin de volumes plus importants ? <a href="#" class="comparison-link">Tarification entreprise personnalisée</a></p>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
+    <!-- Demo Section -->
+    <section class="demo" id="demo">
         <div class="container">
-            <h2 class="section-title">Ce que nos utilisateurs disent</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Pixnora a transformé ma façon de créer du contenu. Je gagne des heures chaque semaine !"</p>
-                    <div class="testimonial-author">
-                        <img src="https://i.pravatar.cc/48?img=1" alt="Avatar">
-                        <div>
-                            <p class="author-name">Sophie Martin</p>
-                            <p class="author-role">Content Creator</p>
+            <h2 class="section-title">Testez Pixnora</h2>
+            <p class="section-subtitle">Voyez la puissance de l'IA en action</p>
+            
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <div class="demo-preview">
+                        <div class="demo-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Exemple d'image générée</p>
                         </div>
                     </div>
+                    <h3>Génération d'images</h3>
+                    <p>Testez notre générateur d'images IA</p>
+                    <button class="demo-btn">Tester maintenant</button>
                 </div>
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"L'IA est incroyablement intuitive. Aucune courbe d'apprentissage, juste des résultats immédiats."</p>
-                    <div class="testimonial-author">
-                        <img src="https://i.pravatar.cc/48?img=2" alt="Avatar">
-                        <div>
-                            <p class="author-name">Marc Dubois</p>
-                            <p class="author-role">Designer Graphique</p>
+
+                <div class="demo-card">
+                    <div class="demo-preview">
+                        <div class="demo-placeholder">
+                            <i class="fas fa-film"></i>
+                            <p>Exemple de vidéo</p>
                         </div>
                     </div>
+                    <h3>Création vidéo</h3>
+                    <p>Créez une vidéo en moins de 2 minutes</p>
+                    <button class="demo-btn">Tester maintenant</button>
                 </div>
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Le meilleur investissement pour notre agence. Nos clients sont impressionnés par la qualité."</p>
-                    <div class="testimonial-author">
-                        <img src="https://i.pravatar.cc/48?img=3" alt="Avatar">
-                        <div>
-                            <p class="author-name">Élise Leclerc</p>
-                            <p class="author-role">Directrice d'Agence</p>
+
+                <div class="demo-card">
+                    <div class="demo-preview">
+                        <div class="demo-placeholder">
+                            <i class="fas fa-microphone"></i>
+                            <p>Exemple de voix IA</p>
                         </div>
                     </div>
+                    <h3>Voix off IA</h3>
+                    <p>Testez nos voix naturelles</p>
+                    <button class="demo-btn">Tester maintenant</button>
                 </div>
             </div>
         </div>
@@ -214,44 +341,50 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Prêt à transformer vos idées ?</h2>
+            <h2>Prêt à transformer votre création de contenu ?</h2>
             <p>Rejoignez des milliers de créateurs qui utilisent Pixnora</p>
-            <button class="cta-button primary-btn">Commencer maintenant - C'est gratuit</button>
+            <button class="cta-button primary-btn large-btn">Commencer maintenant - C'est gratuit</button>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer" id="contact">
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-section">
                     <h4>Pixnora</h4>
-                    <p>Transformez vos idées en contenus visuels époustouflants avec l'IA.</p>
+                    <p>La plateforme IA de référence pour créer du contenu viral rapidement et facilement.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
+
                 <div class="footer-section">
                     <h4>Produit</h4>
                     <ul>
-                        <li><a href="#">Fonctionnalités</a></li>
+                        <li><a href="#">Génération images</a></li>
+                        <li><a href="#">Création vidéo</a></li>
+                        <li><a href="#">Voix IA</a></li>
+                        <li><a href="#">Montage auto</a></li>
                         <li><a href="#">Tarification</a></li>
-                        <li><a href="#">Roadmap</a></li>
-                        <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-section">
                     <h4>Ressources</h4>
                     <ul>
                         <li><a href="#">Documentation</a></li>
                         <li><a href="#">Tutoriels</a></li>
+                        <li><a href="#">Blog</a></li>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">Support</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-section">
                     <h4>Entreprise</h4>
                     <ul>
@@ -259,9 +392,11 @@
                         <li><a href="#">Carrières</a></li>
                         <li><a href="#">Mentions légales</a></li>
                         <li><a href="#">Confidentialité</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2025 Pixnora. Tous droits réservés.</p>
             </div>
